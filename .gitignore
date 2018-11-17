@@ -1,0 +1,5 @@
+/.cache/
+/.env
+/vendor/
+/dist/
+/node_modules/

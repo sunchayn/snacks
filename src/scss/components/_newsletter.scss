@@ -1,0 +1,80 @@
+.newsletter {
+  display: block;
+  border-top: 1px solid $color-border;
+  border-bottom: 1px solid $color-border;
+}
+
+.newsletter>.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.newsletter-introduction,
+.newsletter-form{
+  padding: $large-padding;
+  flex: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.newsletter-introduction {
+  // padding-left: 0;
+  & > h1 {
+    margin-top: 0;
+    margin-bottom: $margin;
+  }
+
+  & > p {
+    margin-top: 0
+  }
+}
+
+.newsletter-form {
+  border-top: 1px solid $color-border;
+  
+}
+
+#tlemail {
+  max-width: 100%;
+}
+
+
+.newsletter-form input[type=submit] {
+  display: inline-block;
+  margin-top: $margin;
+  padding: $padding $large-padding;
+  text-transform: uppercase;
+  border-radius: 27px;
+  border: 1px solid $color-border;
+  background-color: $color-primary;
+  color: #fff;
+}
+
+@media only screen and (min-width: $tablet-breakpoint) {
+
+  .newsletter-introduction,
+  .newsletter-form{
+    flex-basis: 1px;
+  }
+
+  .newsletter-form  {
+    border-top: 0;
+    border-left: 1px solid $color-border;
+
+    flex-grow: 2;
+  }
+
+
+  #tlemail {
+    width: 300px;
+  }
+  
+  .newsletter-form input[type=submit] {
+    max-width: 200px;
+    margin-top: 0;
+    margin-left: $margin;
+  }
+
+}

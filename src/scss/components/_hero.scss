@@ -1,0 +1,100 @@
+.hero {
+  // height: 600px;
+  // min-height: 100vh;
+  flex: 1px;
+  background-color: #ffffff;
+  // background: linear-gradient(#eee, #fff);
+  // background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  // background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+  // background: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+  // background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+
+  // background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+  // background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $color-border;
+
+  background: linear-gradient(270deg, #fdfcfb, #e2d1c3);
+  // background: linear-gradient(270deg, #dad4ec, #dad4ec, #f3e7e9);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimationName 5s ease infinite;
+  -moz-animation: AnimationName 5s ease infinite;
+  animation: AnimationName 5s ease infinite;
+
+
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
+.hero-wrapper {
+  flex-grow: 1;
+  text-align: center;
+  padding: 0 $padding;
+  font-size: 11px;
+
+  & h1 {
+    margin-top: $margin;
+    margin-bottom: $margin;
+    font-size: 2.074em;
+  }
+
+  & h2 {
+    margin-top: $margin;
+    // margin-bottom: $margin;
+    font-weight: 300;
+    font-size: 1.728em;
+  }
+
+  & h3 {
+    font-size: 1.44em;
+  }
+
+}
+
+@media only screen and (min-width: $tablet-breakpoint) {
+
+  .hero-wrapper  {
+    font-size: 14px;
+  }
+}
+
+.hero-logo {
+  width: $hero-logo-mobile-width;
+  user-select: none;
+  max-width: 100%;
+  height: auto;
+  border-radius: 35px;
+
+  box-shadow: 0 0 15px 0 rgba($color-muted, .5);
+
+}
+
+@media only screen and (min-width: $tablet-breakpoint) {
+  .hero-logo {
+    width: $hero-logo-width;
+  }
+}
+
+
+.hero-divider {
+  width: 100px;
+  border-bottom: 1px solid $color-heading;
+  margin: $margin auto;
+}

@@ -1,0 +1,20 @@
+.menu.is-scrolling {
+  background-color: rgba(#fff, 0.5);
+  box-shadow: 0 0 5px 0 rgba($color-border, 0.8);
+}
+
+.menu.is-scrolling .menu-item{
+  height: $menu-height + 5px;
+  // line-height: $menu-height + 5px;
+}
+
+.mobileMenu.is-toggled {
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  
+}

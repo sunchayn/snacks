@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snacks Project</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="static/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
+  <!-- <link rel="manifest" href="static/site.webmanifest"> -->
+  <link rel="mask-icon" href="static/favicon/safari-pinned-tab.svg" color="#0090c1">
+
+  <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+  <div class="l-home">
+    <nav class="menu" id="menu">
+      <div class="container">
+        <div class="menu-item menu-branding"><span>@snacks $ </span>hello world</div>
+        <div class="menu-socialLinks">
+          <a href="https://github.com/mazentouati" class="menu-item"><i class="github icon"></i>GitHub</a>
+          <a href="https://www.facebook.com/Mazn.touati" class="menu-item"><i class="facebook f icon"></i>Facebook</a>
+          <a href="https://twitter.com/mazen_touati" class="menu-item"><i class="twitter icon"></i>Twitter</a>
+        </div>
+        <div class="menu-mobile">
+          <a href="#menu" class="menu-item toggle-menu"><i class="bars icon"></i></a>
+        </div>
+      </div>
+    </nav>
+    <nav class="mobileMenu" id="mobile-menu">
+      <a href="#close" class="mobileMenu-item toggle-menu"><i class="times icon"></i></a>
+      <a href="https://github.com/mazentouati" class="mobileMenu-item"><i class="github icon"></i>GitHub</a>
+      <a href="https://www.facebook.com/Mazn.touati" class="mobileMenu-item"><i class="facebook f icon"></i>Facebook</a>
+      <a href="https://twitter.com/mazen_touati" class="mobileMenu-item"><i class="twitter icon"></i>Twitter</a>
+    </nav>
+    <header class="hero">
+      <div class="hero-wrapper">
+        <img class="hero-logo" src="static/logo.png" alt="snacks project logo" draggable="false">
+        <h1>An intuitive toolkit to manage databases faster and happier</h1>
+        <h2>created for <u>small</u> and <u>medium</u> projects</h2>
+      </div>
+    </header>
+  </div>
+
+  <section class="products">
+
+    <div class="container">
+      <div class="products-heading">
+        <h1>Snacks@Family</h1>
+      </div>
+
+      <div class="product">
+        <div class="product-image">
+          <img src="static/senda.png" alt="senda console screenshot">
+        </div>
+        <div class="product-content">
+          <div class="product-title">
+            <h2>Snacks@console</h2>
+          </div>
+          <div class="product-description">
+            snacks@console is an open source intuitive console to run and save SQL queries in the browser.
+          </div>
+          <div class="product-link">
+            <a href="#">>_homepage</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="soon" title="soon">
+        <i class="ellipsis horizontal icon"></i>
+      </div>
+
+    </div>
+  </section>
+
+  <form class="newsletter" action="https://tinyletter.com/mazentouati" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/mazentouati', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+    <div class="container fluid">
+      <div class="newsletter-introduction">
+        <h1>We are friends, right ?</h1>
+        <p>subscribe to my newsletter so you can stay informed about this project, cheers 🎉</p>
+        <small><a href="https://tinyletter.com" target="_blank">powered by TinyLetter</a></small>
+      </div>
+      <div class="newsletter-form">
+        <div class="form-row">
+          <label for="tlemail">Where i can reach you ?</label>
+          <input type="text" name="email" id="tlemail" placeholder="someone's email address" />
+          <input type="hidden" value="1" name="embed"/><input type="submit" class="button" value="Subscribe" />
+        </div>
+      </div>
+    </div>
+  </form>
+  <footer>
+    <div class="container">
+      Designed and developed by <a href="#">@mazen touati</a>, licensed under MIT License.
+    </div>
+  </footer>
+
+  <!-- <script src="js/vendor.min.js"></script> -->
+  <script src="js/bundle.js"></script>
+</body>
+</html>
