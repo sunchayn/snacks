@@ -19,8 +19,8 @@ const config = require('../config/export.js');
 module.exports = function(callback) {
   console.log('copying html files...');
   gulp.src(config.html.src)
-    .pipe(replace(/(<link.*href=")(.*)(".*>)/gi, '$1public/$2$3'))
-    .pipe(replace(/(<script.*src=")(.*)(".*>)/gi, '$1public/$2$3'))
+    .pipe(replace(/(<link.*href=")(?!https:\/\/)(.*)(".*>)/gi, '$1public/$2$3'))
+    .pipe(replace(/(<script.*src=")(?!https:\/\/)(.*)(".*>)/gi, '$1public/$2$3'))
     .pipe(replace(/(<img.*src=")(.*)(".*>)/gi, '$1public/$2$3'))
     .pipe(gulp.dest(config.html.outputDir))
     .pipe(print(log.created))
